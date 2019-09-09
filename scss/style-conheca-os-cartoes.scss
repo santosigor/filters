@@ -1,0 +1,195 @@
+.bd-conheca-os-cartoes {
+	> header {
+		padding: 10px;
+	}
+	&__content {
+		padding: 0 10px 10px 10px;
+		@media (max-width: 479px) {
+			padding: 0 0 10px 0;
+		}
+		.tabsScroll {
+			padding: 0;
+			ul {
+		    width: 100%;
+		    background: #ededed;
+		    padding: 5px 5px 0 5px !important;
+		    border-bottom: 1px solid #d2d2d2;
+		    list-style: none;
+		    margin: 0;
+				li {
+					padding: 0;
+					float: none;
+					a {
+				    padding: 10px;
+					}
+					&.active {
+						border-bottom: 1px solid #fff;
+    				background: #fff;
+    				a {
+    					color: #CC092D;
+    				}
+					}
+				}
+			}
+		}
+		&__filters {
+			margin-bottom: 30px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #d2d2d2;
+			.border-r {
+				&:after {
+					content: '';
+					position: absolute;
+					height: 100%;
+					width: 1px;
+					background: #d2d2d2;
+					right: 10px;
+					top: 0;
+				}
+				@media (max-width: 479px) {
+					margin-bottom: 20px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #d2d2d2;
+					&:after {
+						display: none;
+					}
+				}	
+			}
+			hr {
+				margin: 20px 0;
+			}
+			p {
+				margin-bottom: 15px!important;
+			}
+			&__items {
+				label {
+					padding: 10px 20px 10px 0;
+    			font-size: 13px;
+    			display: inline-block;
+    			cursor: pointer;
+    			-webkit-user-select: none;
+				  -moz-user-select: none;
+				  -ms-user-select: none;
+				  user-select: none;
+    			@media (max-width: 639px) {
+						padding: 7px 20px 7px 0;
+					}
+    			span {
+    				position: relative;
+    				top: -2px;
+    			}
+    			&.elo, &.amex, &.visa, &.master {
+    				background: url(https://banco.bradesco/assets/classic/img/produtos-servicos/cartoes-sprite.png) no-repeat;
+    				input {
+    					margin-right: 56px;
+    				}
+    			}
+    			&.amex {
+    				background-position: 23px -797px !important;
+    				width: 212px;
+    			}
+    			&.elo {
+    				background-position: -339px -797px !important;
+    				width: 118px;
+    			}
+    			&.visa {
+    				background-position: -177px -797px !important;
+    				width: 130px;
+    			}
+    			&.master {
+    				background-position: -500px -797px !important;
+    				width: 212px;
+    			}
+				}
+			}
+		}
+		&__cards {
+			margin-left: -10px;
+   		margin-right: -10px;
+			&__card-cartao {
+				padding: 12px 12px 20px 12px;
+				float: left;
+				width: 172px;
+				margin-right: 10px;
+				margin-left: 10px;
+				margin-bottom: 20px;
+		    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+		    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+		    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+		    border-radius: 5px 5px 5px 5px;
+		    -moz-border-radius: 5px 5px 5px 5px;
+		    -webkit-border-radius: 5px 5px 5px 5px;
+		    > a {
+					display: block;		    	
+		    }
+	     	a {
+	    		text-decoration: none!important;
+	     		&:hover {
+						color: #75a7ec!important;
+	     		}
+	     	}
+		    h3 {
+		    	font-family: arial;
+			    font-size: 13px!important;
+			    line-height: 16px;
+			    // min-height: 70px;
+		    }
+		    ul {
+		    	margin: 15px 0;
+		    }
+	     	img {
+	     		max-width: 100%;
+	     		width: 100%;
+	     		display: block;
+	     	}
+	     	&__btn {
+	     		text-align: center;
+	     		border-top: 1px solid #d2d2d2;
+	     		padding-top: 20px;
+	     	}
+			}
+		}
+		&__legenda {
+			padding: 10px 0;
+			p {
+				color: #4d4e53;
+		    font-size: 11px !important;
+		    line-height: 14px;
+		    text-align: justify;
+		    font-family: arial;
+		    &:last-child {
+		    	margin-bottom: 0!important;
+		    }
+			}
+		}
+		&__result {
+	    padding: 10px;
+	    margin: 0 10px;
+	    margin-bottom: 1rem;
+	    border: 1px solid transparent;
+      color: #856404;
+      font-size: 14px;
+	    background-color: #fff3cd;
+	    border-color: #ffeeba;
+		}
+	}
+	&__bt-voltar {
+		border-top: 1px solid #d2d2d2;
+		padding: 20px 0 0;
+		margin: 0 10px;
+		a {
+			color: #00539f!important;
+	    font-size: 12px;
+	    text-decoration: none;
+	    span {
+	    	font-size: 16px;
+	    }
+		}
+		.col-lg-6 {
+			text-align: left;
+			&:last-child {
+				text-align: right;
+			}
+		}
+	}
+}
